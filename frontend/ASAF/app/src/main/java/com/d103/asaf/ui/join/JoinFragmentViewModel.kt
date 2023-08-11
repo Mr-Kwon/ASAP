@@ -58,7 +58,7 @@ class JoinFragmentViewModel : ViewModel() {
 
                 val classInfoResponse = memberService.setClass(id, generationCode, regionCode, classCode)
 
-                if (classInfoResponse.isSuccessful && classInfoResponse.body()=="true") {
+                if (classInfoResponse.isSuccessful) {
                     Log.d(TAG, "setClass: 성공 !")
                 } else {
                     Log.d(TAG, "setClass: 실패 !")

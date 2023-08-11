@@ -24,7 +24,7 @@ interface MemberService {
     // 반배정
     @POST("/classinfo/create")
     suspend fun setClass(
-        @Query("Id") id: Int,
+        @Query("id") id: Int,
         @Query("class_code") classCode: Int,
         @Query("region_code") regionCode: Int,
         @Query("generation_code") generationCode: Int
