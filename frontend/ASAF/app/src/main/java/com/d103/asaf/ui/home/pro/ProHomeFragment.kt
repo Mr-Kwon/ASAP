@@ -77,7 +77,7 @@ class ProHomeFragment : BaseFragment<FragmentProHomeBinding>(FragmentProHomeBind
                     noti.content = content
                     noti.title = title
                     if (writer != null) {
-                        noti.sender = writer + 1
+                        noti.sender = writer
                     }
 
 
